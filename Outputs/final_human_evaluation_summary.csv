@@ -1,0 +1,17 @@
+evaluation_component,metric,value
+Skill Extraction,Accuracy,0.835
+Skill Extraction,Precision,0.8811188811188811
+Skill Extraction,Recall,0.8873239436619719
+Skill Extraction,F1 Score,0.8842105263157894
+Recommendation Ranking,Precision@5,0.8800000000000001
+Recommendation Ranking,Recall@5,0.6914862914862915
+Recommendation Ranking,NDCG@5,0.978206386137337
+Recommendation Ranking,MRR,1.0
+Skill Gap,Accuracy,0.835
+Skill Gap,Precision,0.6491228070175439
+Skill Gap,Recall,0.74
+Skill Gap,F1 Score,0.6915887850467289
+Skill Gap,Average Expert Rating,4.84
+RAG,Overall Mean Rating,5.0
+RAG,Positive Rating Percentage,1.0
+RAG,Unsupported Claims,0.0
