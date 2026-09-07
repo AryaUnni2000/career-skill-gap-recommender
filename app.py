@@ -1696,11 +1696,24 @@ elif page == "RAG Explanation":
         border=True
     ):
 
-        st.write(
-            selected_profile[
-                "final_rag_explanation"
-            ]
+        # Keep the displayed RAG score aligned with the final Week 8
+        # recommendation score. This changes display text only; it does not
+        # modify the stored RAG output, model scores, or evaluation results.
+        rag_explanation_display = str(
+            selected_profile["final_rag_explanation"]
         )
+
+        rag_explanation_display = re.sub(
+            r"hybrid recommendation score of\\s+\\d+(?:\\.\\d+)?%?",
+            (
+                "final overall match of "
+                f"{selected_profile['top_recommendation_percentage']:.2f}%"
+            ),
+            rag_explanation_display,
+            flags=re.IGNORECASE
+        )
+
+        st.write(rag_explanation_display)
 
     st.subheader(
         "Skill-Gap Evidence"
