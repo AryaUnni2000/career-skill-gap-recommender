@@ -9,6 +9,7 @@ import re
 
 
 
+
 # ============================================================
 # RESUME TEXT EXTRACTION HELPER
 # ============================================================
@@ -788,10 +789,10 @@ st.set_page_config(
 # ============================================================
 
 APP_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = APP_DIR.parent
+PROJECT_ROOT = APP_DIR
 
-WEEK8_OUTPUT_DIR = PROJECT_ROOT / "Outputs" / "Week8"
-HUMAN_EVAL_DIR = PROJECT_ROOT / "Outputs" / "Human_Evaluation"
+WEEK8_OUTPUT_DIR = APP_DIR
+HUMAN_EVAL_DIR = APP_DIR
 STREAMLIT_DIR = APP_DIR
 
 CANDIDATE_MASTER_FILE = (
