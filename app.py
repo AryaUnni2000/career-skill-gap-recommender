@@ -1697,14 +1697,13 @@ elif page == "RAG Explanation":
     ):
 
         # Keep the displayed RAG score aligned with the final Week 8
-        # recommendation score. This changes display text only; it does not
-        # modify the stored RAG output, model scores, or evaluation results.
+        # recommendation score. This changes display text only.
         rag_explanation_display = str(
             selected_profile["final_rag_explanation"]
         )
 
         rag_explanation_display = re.sub(
-            r"hybrid recommendation score of\\s+\\d+(?:\\.\\d+)?%?",
+            r"hybrid recommendation score of\s+\d+(?:\.\d+)?%?",
             (
                 "final overall match of "
                 f"{selected_profile['top_recommendation_percentage']:.2f}%"
@@ -2176,5 +2175,3 @@ elif page == "Dashboard / Insights":
             st.write(
                 implication
             )
-
-
