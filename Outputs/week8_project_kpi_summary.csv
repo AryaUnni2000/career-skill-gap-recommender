@@ -1,0 +1,17 @@
+kpi,value
+Total Candidates,63
+Occupations Evaluated,15
+Candidate-Occupation Pairs,945
+Deployment-Ready Candidates,63
+Candidates With Priority Skill Gaps,56
+Candidates Without Priority Skill Gaps,7
+Average Top-1 Recommendation %,78.18
+Average Top-1 Skill %,96.06
+Average Top-1 Semantic %,77.57
+Average Top-1 Demand %,37.06
+Average Missing Skills per Candidate,2.76
+RAG Explanations Ready,63
+Original Aligned RAG Explanations,47
+Regenerated RAG Explanations,16
+Most Common Top-1 Occupation,Software Developer
+Candidates Receiving Most Common Top-1,35
